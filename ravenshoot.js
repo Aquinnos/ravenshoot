@@ -1,6 +1,4 @@
 import './ravenshoot.css';
-import AOS from 'aos';
-import '/node_modules/aos/dist/aos.css'; 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
@@ -25,7 +23,6 @@ const db = getFirestore(app);
 // Inicjalizacja Firebase Auth
 const auth = getAuth(app);
 
-AOS.init();
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const volumeSlider = document.getElementById('volumeSlider');
@@ -71,10 +68,10 @@ let lastScoreUpdate = 0;
 let gameOver = false;
 ctx.font = '50px Impact';
 let gameOverSound = new Audio();
-gameOverSound.src = 'public/audio/gameOver.wav';
+gameOverSound.src = './audio/gameOver.wav';
 gameOverSound.volume = 0.2;
 let backgroundMusic = new Audio();
-backgroundMusic.src = 'public/audio/backgroundMusic.mp3';
+backgroundMusic.src = './audio/backgroundMusic.mp3';
 backgroundMusic.volume = 0.2;
 
 let leaderboardButton = document.getElementById('leaderboardButton');
@@ -114,7 +111,7 @@ class Raven {
         this.directionY = Math.random() * 5 - 2.5;  
         this.markedForDeletion = false;     
         this.image = new Image();
-        this.image.src = 'public/images/raven.png';
+        this.image.src = './images/raven.png';
         this.frame = 0;
         this.maxFrame = 4;
         this.timeSinceFlap = 0;
@@ -155,7 +152,7 @@ class Explosion {
 
     constructor(x, y, size){
     this.image = new Image();
-    this.image.src = 'public/images/explosion.png';
+    this.image.src = './images/explosion.png';
     this.spriteWidth = 200;
     this.spriteHeight = 179;
     this.size = size;
@@ -163,7 +160,7 @@ class Explosion {
     this.y = y;
     this.frame = 0;
     this.sound = new Audio();
-    this.sound.src = 'public/audio/explosion.wav';
+    this.sound.src = './audio/explosion.wav';
     this.sound.volume = Explosion.value;
     this.timeSinceLastFrame = 0;
     this.frameInterval = 200;
