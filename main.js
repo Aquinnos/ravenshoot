@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
-
+//app
 document.querySelector('#app').innerHTML = `
   <div>
     <div class="relative z-10 flex justify-center items-center h-svh">
