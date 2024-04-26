@@ -29,7 +29,7 @@ import"./modulepreload-polyfill-B5Qt9EMX.js";import{initializeApp as at}from"htt
           <button id="guestButton" class="button">Play as Guest</button>
         </div>
         <div class="footer h-8 w-full bottom-0 absolute">
-          <p class="text-xs text-center text-white">© 2024 Raven Shoot | Beta 0.5.0</p>
+          <p class="text-xs text-center text-white">© 2024 Raven Shoot | Beta 0.5.1</p>
         </div>
       </div>
       <div class="loginForm hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-20 border-white border-solid border rounded-xl text-white bg-black/20 ">
@@ -50,7 +50,7 @@ import"./modulepreload-polyfill-B5Qt9EMX.js";import{initializeApp as at}from"htt
           <button>Quit</button>
         </div>
         <div class="footer h-8 w-full bottom-0 absolute -translate-x-20">
-          <p class="text-xs text-center text-white">© 2024 Raven Shoot | Beta 0.5.0</p>
+          <p class="text-xs text-center text-white">© 2024 Raven Shoot | Beta 0.5.1</p>
         </div>
       </div>
       <div class="registerForm hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-20 border-white border-solid border rounded-xl text-white bg-black/20 ">
