@@ -78,7 +78,7 @@ import"./modulepreload-polyfill-B5Qt9EMX.js";import{initializeApp as at}from"htt
           <div id="register-message"></div>
         </form>
         <div class="footer h-8 w-full bottom-0 absolute -translate-x-20">
-          <p class="text-xs text-center text-white">© 2024 Raven Shoot | Beta 0.5.0</p>
+          <p class="text-xs text-center text-white">© 2024 Raven Shoot | Beta 0.5.1</p>
         </div>
       </div>
     </div>
