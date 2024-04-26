@@ -14,6 +14,9 @@ import"./modulepreload-polyfill-B5Qt9EMX.js";import{initializeApp as at}from"htt
           <button>Quit</button>
         </div>
       </div>
+      <div class="announce w-[350px] h-[400px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-20 flex flex-col justify-center items-center border-white border-solid border rounded-xl text-white bg-black/20">
+        <p class="text-2xl text-center text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Width is too small!</p>
+      </div>
       <div class="mainContainer w-[350px] h-[400px] flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-20 border-white border-solid border rounded-xl text-white bg-black/20">
         <p class="text-3xl font-hacked font-bold text-center my-5" data-aos="fade-in">Raven Shoot</p>
         <div class="loginContainerButton subContainer w-full my-1">
