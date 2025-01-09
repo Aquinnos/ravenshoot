@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Raven Shoot</title>
+    <link rel="shortcut icon" href="/images/raven.ico" type="image/x-icon" />
   </head>
   <body>
+    <div
+      class="video-overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"
+    ></div>
+    <video autoplay loop muted>
+      <source src="/videos/ravenshootbg.mp4" type="video/mp4" />
+    </video>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/firebase.js"></script>
+    <script type="module" src="/aos.js"></script>
   </body>
 </html>
