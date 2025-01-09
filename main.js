@@ -1,6 +1,6 @@
 import './style.css';
 import AOS from 'aos';
-import './node_modules/aos/dist/aos.css'; 
+import './node_modules/aos/dist/aos.css';
 
 AOS.init();
 
@@ -13,38 +13,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const guestButton = document.querySelector('#guestButton');
   const quitButtons = document.querySelectorAll('.quitButton');
   const forgotPasswordButton = document.querySelector('#forgotPasswordButton');
-  const resetPasswordContainer = document.querySelector('#resetPasswordContainer');
+  const resetPasswordContainer = document.querySelector(
+    '#resetPasswordContainer'
+  );
 
-  forgotPasswordButton.addEventListener('click', function() {
+  forgotPasswordButton.addEventListener('click', function () {
     registerForm.style.display = 'none';
     resetPasswordContainer.style.display = 'block';
   });
 
-  loginButton.addEventListener('click', function() {
+  loginButton.addEventListener('click', function () {
     mainContainer.style.display = 'none';
     loginForm.style.display = 'block';
   });
 
-  registerButton.addEventListener('click', function() {
+  registerButton.addEventListener('click', function () {
     mainContainer.style.display = 'none';
     registerForm.style.display = 'block';
   });
 
-  guestButton.addEventListener('click', function() {
+  guestButton.addEventListener('click', function () {
     window.location.href = './game/index.html';
   });
 
-  quitButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
+  quitButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
       mainContainer.style.display = 'flex';
       loginForm.style.display = 'none';
       registerForm.style.display = 'none';
       resetPasswordContainer.style.display = 'none';
     });
   });
-
 });
-
 
 document.querySelector('#app').innerHTML = `
   <div>

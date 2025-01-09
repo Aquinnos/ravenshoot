@@ -15,16 +15,7 @@ import {
   limit,
   getDocs,
 } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js';
-
-const firebaseConfig = {
-  apiKey: Process.env.FIREBASE_API_KEY, // .env
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
-  measurementId: '',
-};
+import firebaseConfig from '../firebaseConfig.js';
 
 // Inicjalizacja aplikacji Firebase
 const app = initializeApp(firebaseConfig);

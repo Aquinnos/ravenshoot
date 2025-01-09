@@ -14,16 +14,7 @@ import {
   where,
   getDocs,
 } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js';
-
-const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY, // .env
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
-  measurementId: '',
-};
+import firebaseConfig from './firebaseConfig.js';
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -85,7 +76,7 @@ document
         password
       );
       console.log('User logged in:', userCredential.user);
-      window.location.href = '/game/index.html';
+      window.location.href = './game/index.html';
     } catch (error) {
       console.error('Error in user login:', error);
     }
