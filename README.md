@@ -1,6 +1,6 @@
 # Raven Shoot
 
-Raven Shoot is a web-based game built with HTML, CSS, JavaScript, and Firebase. This project uses Vite for building and bundling the assets.
+Raven Shoot is a web-based game built with HTML, CSS, JavaScript, and Firebase. This is my first project using Vite for building and bundling the assets.
 
 ## Getting Started
 
