@@ -12,7 +12,7 @@ Raven Shoot is a web-based game built with HTML, CSS, JavaScript, and Firebase. 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/ravenshoot.git
+   git clone https://github.com/aquinnos/ravenshoot.git
    cd ravenshoot
    ```
 2. Install the dependencies:
